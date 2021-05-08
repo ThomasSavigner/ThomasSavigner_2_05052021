@@ -6,55 +6,65 @@
         <title>Prototype Reservia</title>
     </head>
     <body>
-        <header>
-            <a><image></image></a>
-            <nav></nav>
+        <header id="PageHeader">
+            <nav>
+                <a class="GoToHome" href="index.html"><image id="ImgPageHeader" src="images/Reservia.svg" alt="logo Reservia"></image></a>
+                <a class="AnchorAccommodationsBtn" href="#Accommodations">Hébergements</a>
+                <a class="AnchorActivitiesBtn" href="#Activities">Activités</a>
+                <a class="SignUpBtn" href="index.html">S'inscrire</a>
+            </nav>
         </header>
-        <div>
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            <form>
-                <input type="search" />
-            </form>
-            <div>
-                <p>Filtres</p>
-                <a>Economique</a>
-                <a>Familial</a>
-                <a>Romantique</a>
-                <a>Animaux autorisés</a>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                <!-- display number of results search -->
-            </div>
-        </div>
-        <div>
-            <section>
-                <h1>Hébergements à Marseille</h1>
-                <a>Auberge la Cannebière</a>
-                <a>Hôtel du port</a>
-                <a>Hôtel les mouettes</a>
-                <a>Hôtel de la mer</a>
-                <a>Auberge Le Panier</a>
-                <a>Hôtel chez Amina</a>
-                <a>Afficher plus</a>
+        <main>
+            <!--Outil de recherche-->
+            <section id="SearchModule" class="Module">
+                <header>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="Subtitle">En plein centre ville ou en pleine nature</p>
+                </header>
+                <form>
+                    <input type="search" />
+                </form>
+                <div>
+                    <p>Filtres</p>
+                    <a>Economique</a>
+                    <a>Familial</a>
+                    <a>Romantique</a>
+                    <a>Animaux autorisés</a>
+                    <p class="SumResults">Plus de 500 logements sont disponibles dans cette ville</p><!-- indication :"number of search results"-->
+                </div>
             </section>
-            <aside>
-                <h1>Les plus populaires</h1>
-                <a>Hôtel Le soleil du matin</a>
-                <a>Au coeur de l'eau Chambres d'hôtes</a>
-                <a>Hôtel Tout bleu et Blanc</a>
-            </aside>
-        </div>
-        <div>
-            <section>
-                <h1>Activités à Marseille</h1>
-                <a>Vieux Port</a>
-                <a>Fort de Pomègues</a>
-                <a>îles du Frioul</a>
-                <a>Parc National des Calanques</a>
-                <a>Notre-Dame-de-la-Garde</a>
-                <a>Parc Longchamp</a>
+
+            <!--résultats de recherche-->
+            <section id="Accommodations" class="Module">
+                <div>
+                    <h2>Hébergements à Marseille</h2>
+                    <a>Auberge la Cannebière</a>
+                    <a>Hôtel du port</a>
+                    <a>Hôtel les mouettes</a>
+                    <a>Hôtel de la mer</a>
+                    <a>Auberge Le Panier</a>
+                    <a>Hôtel chez Amina</a>
+                    <a>Afficher plus</a>
+                </div>
+                <div>
+                    <h2>Les plus populaires</h2>
+                    <a>Hôtel Le soleil du matin</a>
+                    <a>Au coeur de l'eau Chambres d'hôtes</a>
+                    <a>Hôtel Tout bleu et Blanc</a>
+                </div>
+            </section>    
+            
+            <!--activités dans le lieu recherché-->
+            <section id="Activities" class="Module">
+                    <h2>Activités à Marseille</h2>
+                    <a>Vieux Port</a>
+                    <a>Fort de Pomègues</a>
+                    <a>îles du Frioul</a>
+                    <a>Parc National des Calanques</a>
+                    <a>Notre-Dame-de-la-Garde</a>
+                    <a>Parc Longchamp</a>
             </section>
-        </div>
+        </main>
         <footer>
             <div>
                 <h4>A propos</h4>

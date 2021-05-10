@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
         <title>Prototype Reservia</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header id="PageHeader">
             <nav>
-                <a class="GoToHome" href="index.html"><image id="ImgPageHeader" src="images/Reservia.svg" alt="logo Reservia"></image></a>
+                <a class="GoToHome" href="index.html"><image id="ImgPageHeader" 
+                    src="images/Reservia.svg" alt="logo Reservia" /></a>
                 <a class="AnchorAccommodationsBtn" href="#Accommodations">Hébergements</a>
                 <a class="AnchorActivitiesBtn" href="#Activities">Activités</a>
                 <a class="SignUpBtn" href="index.html">S'inscrire</a>
@@ -19,18 +20,49 @@
             <section id="SearchModule" class="Module">
                 <header>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="Subtitle">En plein centre ville ou en pleine nature</p>
+                    <p class="SubtitleSearch">En plein centre ville ou en pleine nature</p>
                 </header>
-                <form>
-                    <input type="search" />
+                <form id="research" method="post" action="traitment.php">
+                        <image id="map-marker" src="images/icons/map-marker-alt.svg"
+                                 alt="icon localisation" />
+                    <input type="search" id="Marseille" placeholder="Marseille, France" />
+                    <input type="submit" value="Rechercher" id="ResearchBtn" />
                 </form>
-                <div>
-                    <p>Filtres</p>
-                    <a>Economique</a>
-                    <a>Familial</a>
-                    <a>Romantique</a>
-                    <a>Animaux autorisés</a>
-                    <p class="SumResults">Plus de 500 logements sont disponibles dans cette ville</p><!-- indication :"number of search results"-->
+                </br>      
+                <div id="Filters">
+                    <p id="TitleFiltersSubModule">Filtres</p>
+                    <a class="FilterGlobalBtn" href="index.html" >
+                        <image class="IconFilter" 
+                            src="images/icons/money-bill-wave-blue.svg" 
+                            alt="Economic Icon" />
+                            Économique
+                    </a>
+                    <a class="FilterGlobalBtn" href="index.html" >
+                        <image class="IconFilter"
+                            src="images/icons/child-blue.svg"
+                            alt="Child Icon" />
+                            Familial
+                    </a>
+                    <a class="FilterGlobalBtn" href="index.html" >
+                        <image class="IconFilter"
+                            src="images/icons/heart-blue.svg"
+                            alt="Romantic Icon" />
+                            Romantique
+                    </a>
+                    <a class="FilterGlobalBtn" href="index.html" >
+                        <image class="IconFilter"
+                            src="images/icons/dog-blue.svg"
+                            alt="Dog Icon" />
+                            Animaux Domestiques
+                    </a>
+                </div>
+                </br>
+                <div id="ResultsIndication">
+                    <image id="InfoResults" src="images/icons/info-blue.svg" 
+                    alt="Info Icon" />
+                    <p class="SumResults">
+                        Plus de 500 logements sont disponibles dans cette ville
+                    </p>
                 </div>
             </section>
 

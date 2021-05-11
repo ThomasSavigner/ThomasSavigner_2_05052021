@@ -149,3 +149,185 @@ h1 {
     border: 3px solid #F2F2F2;
     border-radius: 25px 25px 25px 25px;
 }
+
+/*--- Module Presentation of Research Results ---*/
+
+#Accommodations {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ResultsAccommodations {
+    background-color: #F2F2F2;
+    padding: 30px 40px 30px 40px;
+    border-radius: 15px 15px 15px 15px;
+    max-width: 60%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+}
+                 
+            
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#PanoramaResults {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.CardResultsAccommodations {
+    width: 30%;
+    height: 35%;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin: 0px 0px 20px 0px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.PhotoResultsAccommodations {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.PresentationCardResultsAccommodations {
+    margin-left: 10px;
+}
+
+.TitleCard {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.SubtitleCard1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.price {
+    font-weight: bold
+}
+
+.StarLine {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.Star {
+    height: 12px;
+}
+
+#ShowMore {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/*--- SuggestionsTop3Accommodations ---*/
+
+#SuggestionsAccommodations {
+    background-color: #F2F2F2;
+    padding: 30px 40px 30px 40px;
+    border-radius: 15px 15px 15px 15px;
+    width: 26%;
+}
+
+#TitleSuggestions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#IconChartLine {
+    height: 17px;
+}
+
+#PanoramaSuggestionsAccommodations {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.LinkCardSuggestion {
+    background-color: white;
+    height: 180px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.PhotoCardSuggestionsAccommodations  {
+    width: 155px;
+    height: 170px;
+    margin-right: 25px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.TextCardSuggestionAccommodations {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.TitleCard1 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.SubtitlePrice {
+    margin-top: 5px
+}
+
+.StarLine1 {
+    margin-top: 35px;
+}
+
+
+/*--- Activities ---*/
+
+#PanoramaActivities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LinkActivity { 
+    width: 335px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 5px solid #F2F2F2;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.PhotoActivity {
+    width: 335px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.TitleActivity {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 0px 5px 20px;
+}
+
+.Block2Activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}

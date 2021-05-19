@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width initial-scale=1" />
         <title>Prototype Reservia</title>
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -26,31 +27,35 @@
                         <image id="map-marker" src="images/icons/map-marker-alt.svg"
                                  alt="icon localisation" />
                     <input type="search" id="Marseille" placeholder="Marseille, France" />
-                    <input type="submit" value="Rechercher" id="ResearchBtn" />
+                    
+                    <a id="ResearchBtn" href="#" >
+                        <image id="ResearchIcon" src="images\icons\search.svg" alt="loupe de recherche" />
+                        <p id="TxtRechercher">Rechercher</p>
+                    </a>
                 </form>
                 </br>      
                 <div id="Filters">
                     <p id="TitleFiltersSubModule">Filtres</p>
                     <a class="FilterGlobalBtn" href="index.html" >
-                        <image class="IconFilter" 
+                        <image class="IconFilter" id="EconomicIcon"
                             src="images/icons/money-bill-wave-blue.svg" 
                             alt="Economic Icon" />
                             Économique
                     </a>
                     <a class="FilterGlobalBtn" href="index.html" >
-                        <image class="IconFilter"
+                        <image class="IconFilter" id="ChildIcon"
                             src="images/icons/child-blue.svg"
                             alt="Child Icon" />
                             Familial
                     </a>
                     <a class="FilterGlobalBtn" href="index.html" >
-                        <image class="IconFilter"
+                        <image class="IconFilter" id="RomanticIcon"
                             src="images/icons/heart-blue.svg"
                             alt="Romantic Icon" />
                             Romantique
                     </a>
-                    <a class="FilterGlobalBtn" href="index.html" >
-                        <image class="IconFilter"
+                    <a class="FilterGlobalBtn" id="DogFilterBtn" href="index.html" >
+                        <image class="IconFilter" id="DogIcon"
                             src="images/icons/dog-blue.svg"
                             alt="Dog Icon" />
                             Animaux autorisés
@@ -69,7 +74,7 @@
             <!--résultats de recherche-->
             <section id="Accommodations" class="Module">
                 <div id="ResultsAccommodations">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 class="TitleAccommodations">Hébergements à Marseille</h2>
                     <div id="PanoramaResults">
                         <a class="CardResultsAccommodations" href="index.html">
                             <image class="PhotoResultsAccommodations"
@@ -172,7 +177,7 @@
                 </div>
                 <div id="SuggestionsAccommodations">
                     <div id="TitleSuggestions">
-                        <h2>Les plus populaires</h2>
+                        <h2 class="TitleAccommodations">Les plus populaires</h2>
                         <image id="IconChartLine" src="images\icons\chart-line.svg"
                             alt="chart-line icon" />
                     </div>    
@@ -183,7 +188,7 @@
                                 alt="luxurious bedroom" />
                             <div class="TextCardSuggestionAccommodations">
                                 <p class="TitleCard1">Hôtel Le soleil du matin</p>
-                                <p class="SubtitlePrice">Nuit à partir de<span class="price"> 128 €</span></p>
+                                <p class="SubtitlePrice">Nuit à partir de<span class="price"> 128€</span></p>
                                 <div class="StarLine1" >
                                     <image class="Star" src="images/icons/star-blue.svg" alt="blue star" />
                                     <image class="Star" src="images/icons/star-blue.svg" alt="blue star" />
@@ -199,7 +204,7 @@
                                 alt="bedroom with large bed" />
                             <div class="TextCardSuggestionAccommodations">
                                 <p class="TitleCard1">Au coeur de l'eau Chambres d'hôtes</p>
-                                <p class="SubtitlePrice">Nuit à partir de<span class="price"> 71 €</span></p>
+                                <p class="SubtitlePrice">Nuit à partir de<span class="price"> 71€</span></p>
                                 <div class="StarLine1">
                                     <image class="Star" src="images/icons/star-blue.svg" alt="blue star" />
                                     <image class="Star" src="images/icons/star-blue.svg" alt="blue star" />
@@ -215,7 +220,7 @@
                                 alt="simple bedroom" />
                             <div class="TextCardSuggestionAccommodations">
                                 <p class="TitleCard1">Hôtel Tout bleu et Blanc</p>
-                                <p class="SubtitlePrice">Nuit à partir de<span class="price"> 68 €</span></p>
+                                <p class="SubtitlePrice">Nuit à partir de<span class="price"> 68€</span></p>
                                 <div class="StarLine1">
                                     <image class="Star" src="images/icons/star-blue.svg" alt="blue star" />
                                     <image class="Star" src="images/icons/star-blue.svg" alt="blue star" />
@@ -231,58 +236,62 @@
             
             <!--activités dans le lieu recherché-->
             <section id="Activities" class="Module">
-                    <h2>Activités à Marseille</h2>
+                    <h2 class="TitleActivities">Activités à Marseille</h2>
                     <div id="PanoramaActivities">
-                        <a class="LinkActivity" href="index.html">
-                            <image class="PhotoActivity"
-                                src="images\Activities\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                alt="Vieux Port de Marseille" />
-                            <div class="TitleActivity">
-                                <p class="TitleCard">Vieux Port</p>
-                            </div>
-                        </a>
-                        <div class="Block2Activities">
-                            <a class="LinkActivity" href="index.html">
-                                <image class="PhotoActivity"
-                                    src="images\Activities\paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                    alt="fort en pierre" />
-                                <div class="TitleActivity">
-                                        <p class="TitleCard">Fort de Pomègues</p>
-                                </div>
-                            </a>
-                            <a class="LinkActivity" href="index.html">
-                                <image class="PhotoActivity"
-                                    src="images\Activities\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                    alt="panoramique île" />
-                                <div class="TitleActivity">
-                                        <p class="TitleCard">îles du Frioul</p>
-                                </div>
+                        <div id="Activity1" class="Block1Activity">
+                            <a class="LinkActivity" href="#">
+                                
+                                    <image class="PhotoActivity"
+                                        src="images\Activities\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                        alt="Vieux Port de Marseille" />
+                                    <p class="TitleActivity">Vieux Port</p>
+                                
                             </a>
                         </div>
-                        <a class="LinkActivity" href="index.html">
-                            <image class="PhotoActivity"
-                                src="images\Activities\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                alt="une calanque" />
-                            <div class="TitleActivity">
-                                    <p class="TitleCard">Parc National des Calanques</p>
-                            </div>
-                        </a>
-                        <div class="Block2Activities">
-                            <a class="LinkActivity" href="index.html">
-                                <image class="PhotoActivity"
-                                    src="images\Activities\florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                    alt="église dominant la ville" />
-                                <div class="TitleActivity">
-                                        <p class="TitleCard">Notre-Dame-de-la-Garde</p>
-                                </div>
+                        <div id="Activities2&3" class="Block2Activities">
+                            <a class="LinkActivity1" href="#">
+                                
+                                    <image id="PhotoAct2" class="PhotoActivity1"
+                                        src="images\Activities\paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                        alt="fort en pierre" />
+                                    <p class="TitleActivity">Fort de Pomègues</p>
+                                
                             </a>
-                            <a class="LinkActivity" href="index.html">
-                                <image class="PhotoActivity"
-                                    src="images\Activities\lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                    alt="esplanade" />
-                                <div class="TitleActivity">
-                                        <p class="TitleCard">Parc Longchamp</p>
-                                </div>
+                            <a class="LinkActivity1" href="#">
+                                
+                                    <image id="PhotoAct3" class="PhotoActivity1"
+                                        src="images\Activities\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                        alt="panoramique île" />
+                                    <p class="TitleActivity">Îles du Frioul</p>
+                                
+                            </a>
+                        </div>
+                        <div id="Activity4" class="Block1Activity">
+                            <a class="LinkActivity" href="#">
+                                
+                                    <image class="PhotoActivity"
+                                        src="images\Activities\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                        alt="une calanque" />
+                                    <p class="TitleActivity">Parc National des Calanques</p>
+                                
+                            </a>
+                        </div>
+                        <div id="Activities5&6" class="Block2Activities">
+                            <a class="LinkActivity1" href="#">
+        
+                                    <image id="PhotoAct5" class="PhotoActivity1"
+                                        src="images\Activities\florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                        alt="église dominant la ville" />
+                                    <p class="TitleActivity">Notre-Dame-de-la-Garde</p>
+                                
+                            </a>
+                            <a class="LinkActivity1" href="#">
+                                
+                                    <image id="PhotoAct6" class="PhotoActivity1"
+                                        src="images\Activities\lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                        alt="esplanade" />
+                                    <p class="TitleActivity">Parc Longchamp</p>
+                                
                             </a>
                         </div>
                     </div>

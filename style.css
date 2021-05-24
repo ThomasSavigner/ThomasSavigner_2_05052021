@@ -67,7 +67,7 @@ h1 {
     background-color: #F2F2F2;
     width: 35px;
     height: 18px;
-    padding: 16px 3px 16px 3px;
+    padding: 18px 7px 18px 7px;
     border-radius: 15px 0px 0px 15px;
     
 }
@@ -76,12 +76,12 @@ h1 {
     color: black;
     font-weight: bold;
     font-size: medium;
-    height: 50px;
+    height: 53px;
     border-top: 2px solid #F2F2F2;
     border-right: none;
     border-bottom: 2px solid #F2F2F2;
     border-left: none;
-    padding-left: 1%;
+    padding-left: 2%;
 }
 
 #ResearchBtn {
@@ -90,19 +90,18 @@ h1 {
     font-size: medium;
     text-decoration: none;
     border-color: #0065FC;
-    height: 50px;
-    width: 125px;
+    height: 53px;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
 }
 
 #ResearchIcon {
-    display: none;
+    display:none;
     width: 23px;
 }
 
 #TxtRechercher {
-    margin-left: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 #Filters {
@@ -187,7 +186,6 @@ h1 {
 #Accommodations {
     display: flex;
     justify-content: space-between;
-    
 }
 
 #ResultsAccommodations {
@@ -196,8 +194,8 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     width: 68%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 4%;
     border-radius: 15px 15px 15px 15px;
 }                 
             
@@ -211,6 +209,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 1%;
 }
 
 .CardResultsAccommodations {
@@ -226,7 +225,7 @@ h1 {
 
 .PhotoResultsAccommodations {
     width: 100%;
-    height: 65%;
+    height: 55%;
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -264,13 +263,14 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     margin-left: 4%;
+    margin-top : 4%;
 }
 
 /*--- SuggestionsTop3Accommodations ---*/
 
 #SuggestionsAccommodations {
     background-color: #F2F2F2;
-    padding-top: 2%;
+    padding-top: 1%;
     padding-bottom: 2%;
     border-radius: 15px 15px 15px 15px;
     width: 30%;
@@ -295,7 +295,7 @@ h1 {
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   height: 100%;
+   margin-top: 2%;
 }
 
 .LinkCardSuggestion {
@@ -303,22 +303,26 @@ h1 {
     color: black;
     text-decoration: none;
     display: flex;
-    width: 82%;
+    width: 85%;
+    margin-bottom: 5%;
     border: 5px solid white;
     border-radius: 20px 20px 20px 20px;
 }
 
-.PhotoCardSuggestionsAccommodations  {
+.PictureSuggestion {
     width: 45%;
+}
+
+.PhotoCardSuggestionsAccommodations  {
+    width: 100%;
     border-radius: 20px 0px 0px 20px;
 }
 
 .TextCardSuggestionAccommodations {
-    width: 45%;
-    padding-left: 3%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    width: 45%;
+    padding-left: 6%;
 }
 
 .TitleCard1 {
@@ -326,13 +330,8 @@ h1 {
     font-size: 16px;
 }
 
-.SubtitlePrice:nth-child(2) {
-    flex-grow: 1;
-}
 
-.StarLine1 {
-    padding-bottom: 3%;
-}
+
 
 
 
@@ -441,8 +440,428 @@ footer {
     padding-bottom: 5px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
 
-@media (max-width: 480px) {
+    #PageHeader {
+        height:auto;
+        margin: 20px 0 0 0;
+    }
+
+    nav {
+        height:auto;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1em;
+    }
+
+    .GoToHome {
+        padding-left: 6%;
+    }
+  
+    .AnchorAccommodationsBtn:nth-child(2) {
+        width: 40%;
+        height:auto;
+        order: 3;
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+        padding-top: 0px;
+        font-weight: bold;
+        text-align: center;
+        padding: 6% 5% 4% 5%;
+    }
+  
+    .AnchorActivitiesBtn:nth-child(3) {
+        order:4;
+        width: 40%;
+        height:auto;
+        padding-top: 0px;
+        border-bottom: 4px solid #F2F2F2;
+        font-weight: bold;
+        text-align: center;
+        padding: 6% 5% 4% 5%;
+    }
+
+    .SignUpBtn:nth-child(4){
+        order:2;
+        width: 40%;
+        height:auto;
+        padding-top: 0px;
+        font-weight:bold;
+        text-align: end;
+        padding-right: 6%;
+    }
+
+    h1 {
+        font-size: 1.35em;
+        font-weight:bolder;
+        text-align: center;
+        padding: 2% 15% 0% 1%;
+    }
+
+    .SubtitleSearch {
+        text-align: center;
+        padding-right: 14%;
+    }
+
+    #research {
+        display: flex;
+        justify-content: center;
+        width: 22em;
+        margin-top: 10%;
+    }
+
+    #map-marker {
+        width: 1.15em;
+        padding: 5% 5% 5% 6%;
+    }
+
+    #Marseille {
+        font-size: 1.2em;
+        width: 12em;
+        height:auto;
+        padding-left: 4%;
+    }
+
+    #ResearchBtn {
+        display:flex;
+        align-items:center;
+        padding: 0 5% 0 5%;;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #ResearchIcon {
+        width: 1.25em;
+        display:block;
+    }
+
+    #TxtRechercher {
+        display:none;
+    }
+
+    #Filters {
+        display:flex;
+        flex-wrap:wrap;
+        padding-left: 2%
+    }
+
+    #TitleFiltersSubModule {
+        width: 100%;
+    }
+
+    .FilterGlobalBtn {
+        height: 3em;
+        margin-top: 3%;
+    }
+
+    #EconomicalBtn {
+        width: 7em;
+        margin-right:3%;
+        padding-right: 18%;
+    }
+
+    #EconomicIcon {
+        margin-right: 9%;
+    }
+
+    #FamilyBtn {
+        width: 6em;
+        padding-right: 12%;
+    }
+
+    #ChildIcon {
+        margin-right: 12%;
+    }
+
+    #RomanticBtn {
+        width: 8em;
+        padding-right: 12%;
+    }
+
+    #RomanticIcon {
+        margin-right: 10%;
+    }
+
+    #DogFilterBtn {
+        width: 14em;        
+    }
+
+    #DogIcon {
+        margin-right: 6%;
+    }
+
+    #ResultsIndication {
+        padding-left: 3%;
+        display:flex;
+        align-items:flex-start;
+    }
+
+    #InfoResults {
+        width: 0.3em;
+        margin-top:3%;
+        border-radius: 35px 35px 35px 35px;
+    }
+
+    #Accommodations {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+
+    #SuggestionsAccommodations {
+        width: 100%;
+        padding: 6% 3% 8% 3%;
+        border-radius: 0 0 0 0;
+        justify-content: space-between;
+    }
+
+    #PanoramaSuggestionsAccommodations {
+        padding-top: 5%;
+    }
+
+    .LinkCardSuggestion {
+        width: 95%;
+        margin-bottom: 3%;
+    }
+
+    .PhotoCardSuggestionsAccommodations {
+        width: 100%;
+        border-radius: 10% 0% 0% 10%;
+    }
+
+    .TextCardSuggestionAccommodations {
+        padding: 0% 0% 0% 5%;
+    }
+
+    #TitleSuggestions {
+        margin-left: 0;
+        margin-right: 2%;
+    }
+
+    .SubtitlePrice {
+        font-size: 0.85em;
+    }
+
+    #ResultsAccommodations {
+        width: 100%;
+        background-color: white;
+        padding-top: 7%;
+    }
+
+    #PanoramaResults {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1%;
+    }
+
+    .TitleAccommodations {
+        font-size: 1.4em;
+        margin-left: 2%;
+    }
+
+    .CardResultsAccommodations {
+        width: 95%;
+        padding-bottom: 3%;
+        box-shadow: 3px 3px 5px 5px #F2F2F2;
+    }
+    
+    .PhotoResultsAccommodations {
+        height: 65%;
+    }
+
+    #ShowMore {
+        margin: 8% 0 10% 2%;
+    }
+
+    .TitleActivities {
+        font-size: 1.4em;
+        margin-left: 2%;
+    }
+
+    #PanoramaActivities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 8%;
+    }
+
+    .Block1Activity {
+        width: 97%;
+        height:auto;
+        margin-bottom: 5%;
+    }
+
+    .Block2Activities {
+        width: 97%;
+        height: auto;
+        justify-content:flex-start;
+    }
+
+    .LinkActivity1 {
+        margin-bottom: 5%;
+    }
+
+    #PhotoAct1 {
+        height: 75%;
+    }
+
+    #PhotoAct2 {
+        height: 75%;
+    }
+
+    #PhotoAct3 {
+        height: 75%;
+    }
+
+    #PhotoAct4 {
+        height: 75%;
+    }
+
+    #PhotoAct5 {
+        height: 75%;
+    }
+
+    #PhotoAct6 {
+        height: 75%
+    }
+
+    .TitleActivity {
+        margin-bottom: 13%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FooterModule {
+        padding-right: 0;
+    }
+
+    .FooterLink {
+        margin-bottom: 1%;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
 
 
 }
+
+@media (min-width: 768px) and (max-width: 981px) {
+
+    #Accommodations {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #SuggestionsAccommodations {
+        width: 100%;
+        background-color: white;
+    }
+
+    #TitleSuggestions {
+        margin-left: 3%;
+        margin-right: 6%
+    }
+    #PanoramaSuggestionsAccommodations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .LinkCardSuggestion {
+        width: 25%;
+        flex-direction: column;
+        box-shadow: 5px 5px 3px 5px #F2F2F2;
+    }
+    
+    .PictureSuggestion {
+        width:100%;
+    }
+    .PhotoCardSuggestionsAccommodations {
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .TextCardSuggestionAccommodations {
+        width: 78%;
+        padding-left: 10%;
+    }
+
+    .SubtitlePrice {
+        font-size: 0.92em;
+    }
+
+    #ResultsAccommodations {
+        width: 100%;
+    }
+
+    .CardResultsAccommodations {
+        width: 44%;
+    }
+
+    #PanoramaActivities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .Block1Activity {
+        width: 30%;
+        height: 30%;
+    }
+
+    .Block2Activities {
+        width: 85%;
+        height: 55%;
+    }
+
+    #Activities23 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        width: 60%;
+    }
+
+    #Activities56 {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        width: 60%;
+    }
+
+    .LinkActivity1 {
+        width: 95%;
+        height:100%;
+     }
+
+    #PhotoAct2 {
+        height:65%;
+        width: 100%;
+    }
+
+    #PhotoAct3 {
+        height:65%;
+        width: 100%
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    .FooterModule {
+        padding-right: 5%;
+    }
+
+    #OurAccommodations {
+        padding-left: 5%
+    }
+
+    #Assistance {
+        padding-left: 5%;
+    }
+}
+

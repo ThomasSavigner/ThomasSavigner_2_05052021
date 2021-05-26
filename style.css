@@ -214,7 +214,7 @@ h1 {
 
 .CardResultsAccommodations {
     width: 28%;
-    height: 42%;
+    height: 37%;
     text-decoration: none;
     color: black;
     background-color: white;
@@ -315,22 +315,23 @@ h1 {
 
 .PhotoCardSuggestionsAccommodations  {
     width: 100%;
+    height: 100%;
     border-radius: 20px 0px 0px 20px;
 }
 
 .TextCardSuggestionAccommodations {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 45%;
     padding-left: 6%;
+    padding-right: 10%;
 }
 
 .TitleCard1 {
     font-weight: bold;
     font-size: 16px;
 }
-
-
 
 
 
@@ -752,6 +753,79 @@ footer {
 
 @media (min-width: 768px) and (max-width: 981px) {
 
+    #PageHeader {
+        height:auto;
+        margin: 20px 0 0 0;
+    }
+
+    nav {
+        height:auto;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1em;
+    }
+
+    .GoToHome {
+        padding-left: 6%;
+    }
+  
+    .AnchorAccommodationsBtn:nth-child(2) {
+        width: 40%;
+        height:auto;
+        order: 3;
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+        padding-top: 0px;
+        font-weight: bold;
+        text-align: center;
+        padding: 6% 5% 4% 5%;
+    }
+  
+    .AnchorActivitiesBtn:nth-child(3) {
+        order:4;
+        width: 40%;
+        height:auto;
+        padding-top: 0px;
+        border-bottom: 4px solid #F2F2F2;
+        font-weight: bold;
+        text-align: center;
+        padding: 6% 5% 4% 5%;
+    }
+
+    .SignUpBtn:nth-child(4){
+        order:2;
+        width: 40%;
+        height:auto;
+        padding-top: 0px;
+        font-weight:bold;
+        text-align: end;
+        padding-right: 6%;
+    }
+
+    h1 {
+        font-size: 1.35em;
+        font-weight: bolder;
+        padding: 2% 15% 0% 0%;
+    }
+    
+    #research {
+        display: flex;
+        justify-content: center;
+        margin-top: 7%;
+    }
+
+    #Filters {
+        flex-wrap: wrap;
+    }
+
+    .IconFilter {
+        margin-right: 3%;
+    }
+
+    #TitleFiltersSubModule {
+        width: 100%;
+    }
+
     #Accommodations {
         display: flex;
         flex-direction: column-reverse;
@@ -766,6 +840,7 @@ footer {
         margin-left: 3%;
         margin-right: 6%
     }
+    
     #PanoramaSuggestionsAccommodations {
         display: flex;
         flex-direction: row;
@@ -813,41 +888,49 @@ footer {
     .Block1Activity {
         width: 30%;
         height: 30%;
-    }
-
-    .Block2Activities {
-        width: 85%;
-        height: 55%;
+        margin-bottom: 2% 
     }
 
     #Activities23 {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; 
-        width: 60%;
+        width: 65%;
+        height: auto;
     }
 
     #Activities56 {
         display:flex;
         flex-direction: row;
-        justify-content: space-between; 
-        width: 60%;
+        width: 65%;
+        height: auto;
     }
 
     .LinkActivity1 {
-        width: 95%;
-        height:100%;
+        width: 46%;
+        height: 95%;
      }
 
-    #PhotoAct2 {
-        height:65%;
-        width: 100%;
+     #PhotoAct2 {
+        height: auto;
     }
 
     #PhotoAct3 {
-        height:65%;
-        width: 100%
+        height: auto;
     }
+
+    #PhotoAct5 {
+        height: auto;
+    }
+
+    #PhotoAct6 {
+        height: auto;
+    }
+
+    .TitleActivity {
+        padding-left: 6%;
+        font-size: 0.90em;
+    }
+
     footer {
         display: flex;
         justify-content: space-around;

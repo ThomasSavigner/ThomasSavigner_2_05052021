@@ -66,7 +66,7 @@ h1 {
 #map-marker {
     background-color: #F2F2F2;
     width: 35px;
-    height: 18px;
+    height: 17px;
     padding: 18px 7px 18px 7px;
     border-radius: 15px 0px 0px 15px;
     
@@ -101,6 +101,7 @@ h1 {
 }
 
 #TxtRechercher {
+    font-weight: bold;
     padding: 0px 20px 0px 20px;
 }
 
@@ -231,11 +232,12 @@ h1 {
 
 .PresentationCardResultsAccommodations {
     margin-left: 5%;
+    font-size: 1em;
 }
 
 .TitleCard {
     font-weight: bold;
-    font-size: 16px;
+    
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -326,11 +328,12 @@ h1 {
     width: 45%;
     padding-left: 6%;
     padding-right: 10%;
+    font-size: 1em;
 }
 
 .TitleCard1 {
     font-weight: bold;
-    font-size: 16px;
+    ;
 }
 
 
@@ -948,3 +951,100 @@ footer {
     }
 }
 
+@media (min-width: 982px) and (max-width: 1280px) {
+
+    h1 {
+        font-size: medium
+    }
+
+    #DogFilterBtn {
+        width: 19%
+    }
+
+    .TitleAccommodations {
+        font-size: medium;
+    }
+
+    .PresentationCardResultsAccommodations {
+        font-size: 0.69em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SubtitleCard1 {
+        margin-top :1%;
+    }
+
+    .StarLine {
+        margin-top: 5%;
+    }
+
+    #PanoramaActivities {
+        height: 380px;
+    }
+
+    .TitleActivities {
+        font-size: medium;
+    }
+    .Block1Activity {
+        height: 390px;
+    }
+
+    .Block2Activities {
+        height: 390px;
+    }
+
+    .TextCardSuggestionAccommodations {
+        font-size: 0.69em;
+        padding-right: 0;
+        padding-left: 3%;
+        justify-content: flex-start;
+    }
+
+   .SubtitlePrice {
+       margin-top: 5%;
+   }
+
+   .StarLine1 {
+       margin-top: 22%;
+   }
+    #LinkAct2 {
+        height: 49%
+    }
+
+    #LinkAct3 {
+        height: 35%;
+    }
+
+    #LinkAct5 {
+        height: 40%;
+    }
+
+    #LinkAct6 {
+        height: 44%;
+    }
+    .PhotoActivity {
+        height: 88%;
+    }
+
+    .PhotoActivity1 {
+        height : 72%;
+    }
+
+    .TitleActivity {
+        font-size: 0.75em;
+    }
+
+    .FooterModule {
+        padding-right: 200px;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+
+    .FooterLink {
+        font-size: medium;
+    }
+
+}

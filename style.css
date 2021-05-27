@@ -634,6 +634,320 @@ footer {
 
     .TextCardSuggestionAccommodations {
         padding: 0% 0% 0% 5%;
+        justify-content: flex-start;
+    }
+
+    #TitleSuggestions {
+        margin-left: 0;
+        margin-right: 2%;
+    }
+
+    .SubtitlePrice {
+        font-size: 0.85em;
+        padding-bottom: 10%;
+    }
+
+    #ResultsAccommodations {
+        width: 100%;
+        background-color: white;
+        padding-top: 7%;
+    }
+
+    #PanoramaResults {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1%;
+    }
+
+    .TitleAccommodations {
+        font-size: 1.4em;
+        margin-left: 2%;
+    }
+
+    .CardResultsAccommodations {
+        width: 95%;
+        padding-bottom: 3%;
+        box-shadow: 3px 3px 5px 5px #F2F2F2;
+    }
+    
+    .PhotoResultsAccommodations {
+        height: 65%;
+    }
+
+    #ShowMore {
+        margin: 8% 0 10% 2%;
+    }
+
+    .TitleActivities {
+        font-size: 1.4em;
+        margin-left: 2%;
+    }
+
+    #PanoramaActivities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 8%;
+    }
+
+    .Block1Activity {
+        width: 97%;
+        height:auto;
+        margin-bottom: 5%;
+    }
+
+    .Block2Activities {
+        width: 97%;
+        height: auto;
+        justify-content:flex-start;
+    }
+
+    .LinkActivity1 {
+        margin-bottom: 5%;
+    }
+
+    #PhotoAct1 {
+        height: 75%;
+    }
+
+    #PhotoAct2 {
+        height: 75%;
+    }
+
+    #PhotoAct3 {
+        height: 75%;
+    }
+
+    #PhotoAct4 {
+        height: 75%;
+    }
+
+    #PhotoAct5 {
+        height: 75%;
+    }
+
+    #PhotoAct6 {
+        height: 75%
+    }
+
+    .TitleActivity {
+        margin-bottom: 13%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FooterModule {
+        padding-right: 0;
+    }
+
+    .FooterLink {
+        margin-bottom: 1%;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #PageHeader {
+        height:auto;
+        margin: 20px 0 0 0;
+    }
+
+    nav {
+        height:auto;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1em;
+    }
+
+    .GoToHome {
+        padding-left: 6%;
+    }
+  
+    .AnchorAccommodationsBtn:nth-child(2) {
+        width: 40%;
+        height:auto;
+        order: 3;
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+        padding-top: 0px;
+        font-weight: bold;
+        text-align: center;
+        padding: 6% 5% 4% 5%;
+    }
+  
+    .AnchorActivitiesBtn:nth-child(3) {
+        order:4;
+        width: 40%;
+        height:auto;
+        padding-top: 0px;
+        border-bottom: 4px solid #F2F2F2;
+        font-weight: bold;
+        text-align: center;
+        padding: 6% 5% 4% 5%;
+    }
+
+    .SignUpBtn:nth-child(4){
+        order:2;
+        width: 40%;
+        height:auto;
+        padding-top: 0px;
+        font-weight:bold;
+        text-align: end;
+        padding-right: 6%;
+    }
+
+    h1 {
+        font-size: 1.35em;
+        font-weight:bolder;
+        text-align: center;
+        padding: 2% 8% 0% 4%;
+    }
+
+    .SubtitleSearch {
+        padding-left: 6%;
+    }
+
+    #research {
+        justify-content: ;
+        
+        width: 22em;
+        margin-top: 10%;
+    }
+
+    #map-marker {
+        width: 1.15em;
+        padding: 5% 5% 5% 6%;
+    }
+
+    #Marseille {
+        font-size: 1.2em;
+        width: 12em;
+        height:auto;
+        padding-left: 4%;
+    }
+
+    #ResearchBtn {
+        display:flex;
+        align-items:center;
+        padding: 0 5% 0 5%;;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #ResearchIcon {
+        width: 1.25em;
+        display:block;
+    }
+
+    #TxtRechercher {
+        display:none;
+    }
+
+    #Filters {
+        display:flex;
+        flex-wrap:wrap;
+        padding-left: 2%
+    }
+
+    #TitleFiltersSubModule {
+        width: 100%;
+    }
+
+    .FilterGlobalBtn {
+        height: 3em;
+        margin-top: 3%;
+    }
+
+    #EconomicalBtn {
+        width: 7em;
+        margin-right:3%;
+        padding-right: 18%;
+    }
+
+    #EconomicIcon {
+        margin-right: 9%;
+    }
+
+    #FamilyBtn {
+        width: 6em;
+        padding-right: 12%;
+    }
+
+    #ChildIcon {
+        margin-right: 12%;
+    }
+
+    #RomanticBtn {
+        width: 8em;
+        padding-right: 12%;
+    }
+
+    #RomanticIcon {
+        margin-right: 10%;
+    }
+
+    #DogFilterBtn {
+        width: 14em;        
+    }
+
+    #DogIcon {
+        margin-right: 6%;
+    }
+
+    #ResultsIndication {
+        padding-left: 3%;
+        display:flex;
+        align-items:flex-start;
+    }
+
+    #InfoResults {
+        width: 0.3em;
+        margin-top:3%;
+        border-radius: 35px 35px 35px 35px;
+    }
+
+    #Accommodations {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+
+    #SuggestionsAccommodations {
+        width: 100%;
+        padding: 6% 3% 8% 3%;
+        border-radius: 0 0 0 0;
+        justify-content: space-between;
+    }
+
+    #PanoramaSuggestionsAccommodations {
+        padding-top: 5%;
+    }
+
+    .LinkCardSuggestion {
+        width: 95%;
+        margin-bottom: 3%;
+    }
+
+    .PhotoCardSuggestionsAccommodations {
+        width: 100%;
+        border-radius: 10% 0% 0% 10%;
+    }
+
+    .TextCardSuggestionAccommodations {
+        padding: 0% 0% 0% 5%;
+    }
+
+    .SubtitlePrice {
+        margin-bottom: 30%;
+    }
+
+    .StarLine1 {
+        margin-bottom: 10%
     }
 
     #TitleSuggestions {
@@ -746,12 +1060,6 @@ footer {
     .FooterLink {
         margin-bottom: 1%;
     }
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-
 }
 
 @media (min-width: 768px) and (max-width: 981px) {
@@ -829,6 +1137,10 @@ footer {
         width: 100%;
     }
 
+    #DogFilterBtn {
+        width: 28%;
+        margin-top: 2%;
+    }
     #Accommodations {
         display: flex;
         flex-direction: column-reverse;
@@ -871,6 +1183,7 @@ footer {
 
     .SubtitlePrice {
         font-size: 0.92em;
+        margin-top: 0%;
     }
 
     #ResultsAccommodations {
@@ -958,7 +1271,7 @@ footer {
     }
 
     #DogFilterBtn {
-        width: 19%
+        width: 24%
     }
 
     .TitleAccommodations {
@@ -979,21 +1292,6 @@ footer {
         margin-top: 5%;
     }
 
-    #PanoramaActivities {
-        height: 380px;
-    }
-
-    .TitleActivities {
-        font-size: medium;
-    }
-    .Block1Activity {
-        height: 390px;
-    }
-
-    .Block2Activities {
-        height: 390px;
-    }
-
     .TextCardSuggestionAccommodations {
         font-size: 0.69em;
         padding-right: 0;
@@ -1008,6 +1306,23 @@ footer {
    .StarLine1 {
        margin-top: 22%;
    }
+
+   #PanoramaActivities {
+        height: 380px;
+    }
+
+    .TitleActivities {
+    font-size: medium;
+    }
+
+    .Block1Activity {
+        height: 390px;
+    }
+
+    .Block2Activities {
+        height: 390px;
+    }
+
     #LinkAct2 {
         height: 49%
     }
@@ -1023,14 +1338,7 @@ footer {
     #LinkAct6 {
         height: 44%;
     }
-    .PhotoActivity {
-        height: 88%;
-    }
-
-    .PhotoActivity1 {
-        height : 72%;
-    }
-
+   
     .TitleActivity {
         font-size: 0.75em;
     }
@@ -1045,6 +1353,81 @@ footer {
 
     .FooterLink {
         font-size: medium;
+    }
+}
+
+
+@media (min-width: 1281px) and (max-width: 1514px) {
+
+    #DogFilterBtn {
+        width: 18%;
+    }
+
+    .PresentationCardResultsAccommodations {
+        font-size: 0.90em;
+    }
+
+    .StarLine {
+        margin-top: 4%;
+    }
+
+    .TextCardSuggestionAccommodations {
+        padding-left: 3%;
+        padding-right: 7%;
+        font-size: 0.90em;
+        justify-content: flex-start;
+    }
+
+    .StarLine1 {
+        margin-top: 10%
+    }
+
+    #PanoramaActivities {
+        height: 390px;
+    }
+
+    .Block1Activity {
+        height: 100%;
+    }
+
+    .Block2Activities {
+        height: 100%;
+    }
+
+    #LinkAct2 {
+        height: 50%
+    }
+
+    #PhotoAct2 {
+        height : 73%
+    }
+
+    #LinkAct3 {
+        height: 41%;
+    }
+
+    #LinkAct5 {
+        height: 41%;
+    }
+
+    #PhotoAct5 {
+        height: 66%
+    }
+
+    #LinkAct6 {
+        height: 50%;
+    }
+
+    .PhotoActivity {
+        height: 86%
+    }
+
+    .TitleActivity {
+        padding-bottom: 20%
+    }
+
+    .FooterModule {
+        padding-right: 180px
     }
 
 }

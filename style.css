@@ -1003,7 +1003,8 @@ footer {
 
     .CardResultsAccommodations {
         width: 95%;
-        padding-bottom: 3%;
+        height: 100%;
+        padding-bottom: 0;
         box-shadow: 3px 3px 5px 5px #F2F2F2;
     }
     
@@ -1045,31 +1046,27 @@ footer {
     }
 
     #PhotoAct1 {
-        height: 75%;
+        height: 70%;
     }
 
     #PhotoAct2 {
-        height: 75%;
+        height: 70%;
     }
 
     #PhotoAct3 {
-        height: 75%;
+        height: 70%;
     }
 
     #PhotoAct4 {
-        height: 75%;
+        height: 70%;
     }
 
     #PhotoAct5 {
-        height: 75%;
+        height: 70%;
     }
 
     #PhotoAct6 {
-        height: 75%
-    }
-
-    .TitleActivity {
-        margin-bottom: 13%;
+        height: 70%
     }
 
     footer {
